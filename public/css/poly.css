@@ -1,0 +1,33 @@
+textarea {
+    width: 80%;
+    height: 75%;
+    margin: 10px 0 0 0;
+}
+
+#output-box {
+    border: 1px solid black;
+    max-width: 102px;
+    height: 100%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.die {
+    border: 1px solid black;
+    max-width: 102px;
+    height: 100%; 
+}
+
+/*[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative !important;
+    left:10px;
+}
+
+[type="number"] {
+    position:relative;
+    border: 1px solid black !important;
+    box-shadow: none !important;
+    width: 40px !important;
+    height:1.5em !important;
+    margin: 5px 10px 5px 10px !important;
+}*/
