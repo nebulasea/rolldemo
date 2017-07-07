@@ -38,7 +38,7 @@ const data = [
     value: 0,
     results: [],
     selected: false,
-    img: "../images/d8.jpg"
+    img: "../images/d8.png"
   }, {
     id: 4,
     name: "d6",
@@ -46,7 +46,7 @@ const data = [
     value: 0,
     results: [],
     selected: false,
-    img: "../images/d6.jpg"
+    img: "../images/d6.png"
   }, {
     id: 5,
     name: "d4",
@@ -123,8 +123,8 @@ export default class extends Component {
   }
 
   // roll(number, sides, mod){     console.log("vvvvvvvv Multiple Dice vvvvvvv");
-  //   let results =[];     let total = 0;     console.log(`Roll
-  // ${number}d${sides} + ${mod}`)     while (number > 0){         number--;
+  //  let results =[];     let total = 0;     console.log(`Roll ${number}d${sides}
+  // + ${mod}`)     while (number > 0){         number--;
   // results.push(rollDie(sides))     }     console.log(`Results: ${results}`);
   // let sum = results.reduce(function(dieRoll, amount){         return dieRoll +
   // amount;     });     console.log(`Sum: ${sum}`);     console.log(`Modifier:
