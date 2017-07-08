@@ -1,77 +1,108 @@
     #landscape img {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-}
-.container{
-  width:100%;
-}
-nav, nav-wrapper {
-    background-color: transparent;
-    padding: 0;
-    width: 100%;
-    margin: 0;
-    box-shadow: none;
-    z-index: 100;
-}
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+    }
 
-.large.material-icons.right {
-    padding-right: 20px;
-    font-size: 50px;
-}
+    .container {
+        width: 100%;
+    }
 
-body {
-    background-color: #17431a;
+    nav,
+    nav-wrapper {
+        background-color: transparent;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        z-index: 100;
+    }
+.section{
+  padding: 0;
 }
+    .large.material-icons.right {
+        padding-right: 20px;
+        font-size: 50px;
+    }
 
-logo-container a .brand-logo {
-    color: #cc9610
-}
+    body {
+        background-color: #17431a;
+        font-family: fantasy;
+        font-weight: bold;
+    }
 
-.dropdown-content li>a,
-.dropdown-content li>span {
-    
-        color: #cc9610;
+    p#ourNames {
+        text-align: center;
+    }
+
+    .dropdown-content li>a,
+    .dropdown-content li>span {
+        color: #ecb800;
         font-size: 20px;
         background-color: #3d4862;
+        font-family: 'Eagle Lake', cursive;
+        overflow: none;
     }
+
+    ul:not(.browser-default) li {
+        width: 200px;
+    }
+
     label {
         color: brown;
         font-size: 25px;
     }
+
     dt>a {
         color: brown;
         font-size: 30px;
     }
-    #shadowtext {
-        text-shadow: 5px 3px black;
+
+    a#download-button.btn-large.waves-effect {
+        background-color: rgba(32, 58, 119, .8);
+        font-family: 'Eagle Lake', cursive;
     }
+
+    #shadowtext {
+        text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+        font-family: 'Eagle Lake', cursive;
+        color: #BF3A3A;
+        font-size: 50px;
+        font-style: italic;
+    }
+
     .icon {
         display: inline-block;
     }
+
     #hemingway {
         font-style: italic;
         text-shadow: 2px 2px black;
         font-size: 2rem;
     }
+
     #pinstruct {
         font-size: 1.55rem;
     }
+
     p {
         line-height: 2rem;
     }
+
     .parallax-container {
         margin: 0;
-        min-height: 450px;
+        min-height: 650px;
         line-height: 0;
         height: auto;
         width: auto;
         color: rgba(255, 255, 255, .9);
     }
+
     .parallax-container .section {
         width: 100%;
     }
+
     @media only screen and (max-width: 992px) {
         .parallax-container .section {
             position: absolute;
@@ -81,23 +112,29 @@ logo-container a .brand-logo {
             top: 10%;
         }
     }
+
     @media only screen and (max-width: 600px) {
         #index-banner .section {
             top: 0;
         }
     }
+
     .icon-block {
         padding: 0 15px;
     }
+
     .icon-block .material-icons {
         font-size: inherit;
     }
+
     footer.page-footer {
         margin: 0;
     }
+
     .green.darken-4 {
         color: #17431a;
     }
+
     .green-text.green.darken-4 {
         color: #17431a;
     }
