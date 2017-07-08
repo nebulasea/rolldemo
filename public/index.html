@@ -5,17 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title>Roll Init</title>
+    <!--Style Sheets-->
     <link rel="icon" type="image/png" href="logo.ico" sizes="40x40">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/materialize.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
-
+    <!-- Firebase/Script Tags-->
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
     <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
       crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+          crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+    <!--<script type="text/javascript" src="../js/open.js"></script>-->
 
     <body>
 
@@ -23,132 +32,85 @@
       <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
           <div class="container">
-                                              <!--<div class="row center">
-                                                <div class="col-m6">-->
-
-                                                <!--</div>
-                                              </div>-->
             <nav role="navigation" style="z-index: 100">
-             
-
+            <ul>
+                            <li id="login" class="nav-tab" data-toggle="modal" data-target="#login-container"><a class="nav-anc">Login</a></li>
+                            <!--<li id="logout" class="nav-tab"><a class="nav-anc" href="/users/logout">Logout</a></li>-->
+            </ul>
               <!-- Dropdown Structure -->
               <ul id="dropdown1" class="dropdown-content">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index2.html">Profile</a></li>
                 <li><a href="index3.html">Character Creation</a></li>
               </ul>
-
+<!-- Dropdown Trigger -->
               <ul class="right">
-                <!-- Dropdown Trigger -->
+
                 <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="large material-icons right">view_headline</i></a></li>
+                
               </ul>
+            </nav>
+            <div class="col offset-s-6">
+            <img id="title" src="./images/dndhighlands.png" alt="titlecoa" style="height: 300px; width:100%">
+            </div>
 
-          </nav>
-                        <img id="title" src="./images/dndhighlands.png" alt="titlecoa" style="width:100%">
-          
-
-      <div class="row center">
-      <img id="adventure" src="./images/adventure.png" alt="adventure" style="width:600px; height:150px">
-      </div>
-      <div class="row" />
-        <div class="row center">
-          <a href="index2.html" id="download-button" class="btn-large waves-effect">Create Account</a>
+            <div class="row center" id="adventure">
+              <div>
+                <div id="imgdiv">
+                <img id="adventuretime" src="./images/adventuretime.png" alt="adventure"style="height:60%; width: 60%">
+              </div>
+              </div>
+            </div>
+            <div class="row" />
+            <div class="row center">
+              <a  class="btn-large waves-effect" id="download-button"data-toggle="modal" data-target="#login-container">Create Account</a>
+            </div>
+          </div>
+          <div class="parallax"><img id="landscape" src="./images/highlands.jpg" alt="highlands" style="width: 100%; height: 100%"></div>
         </div>
-      </div>
-      <div class="parallax"><img id="landscape" src="./images/highlands.jpg" alt="highlands" style="width: 100%; height: 100%"></div>
-      </div>
       </div>
       </div>
       <!--Icon Section -->
-      <div class="container">
+      <div class="container green darken-4">
         <div class="section">
           <div class="row">
-            <div class="col s12 m4">
+            <div class="col s4">
               <div class="icon-block">
-                <h2 class="center brown-text"><img src="./images/search.png">
+                <h5 class="center col m-4">Create and Track<br>Multiple Characters</h5>
+                <h2 class="center"><i class="material-icons center">face</i>
                 </h2>
-                <h5 class="center">Search for Wines</h5>
               </div>
             </div>
-            <div class="col s12 m4">
+            <div class="col s4">
               <div class="icon-block">
-                <h2 class="center brown-text"><img src="./images/profile.png">
+                <h5 class="center col m-4">Look Up Features,<br>Spells, and Abilities</h5>
+                <h2 class="center"><i class="material-icons center">library_books</i>
                 </h2>
-                <h5 class="center">Create a Profile</h5>
               </div>
             </div>
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center"><i id="bookicon"><img src="assets/images/book.png"></h2>
-          <h5 class="center">Learn</h5>
+            <div class="col s4">
+              <div class="icon-block">       
+          <h5 class="center col m-4">Invite and<br>Play with Friends</h5>
+          <h2 class="center"><i class="material-icons center">tag_faces</i></h2>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!--Educational Resources Section-->
-<div class="parallax-container valign-wrapper">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <div class="row center">
-        <h2 class="header col s12" id="shadowtext">Educational Resources</h2>
-      </div>
-    </div>
-  </div>
-  <div class="parallax"><img src="assets/images/oldbarrels.jpg" alt="Wine Barrels">
-  </div>
-</div>
-<!--Edu Links-->
-<div class="container">
-  <div class="section">
-    <div class="row">
-      <div class="col s12 center">
-        <h3><i class="mdi-content-send brown-text"></i></h3>
-                  <p class="left-align light">
-                    <ul id="edulinks">
-                      <a href="https://www.guildsomm.com">GuildSomm</a>
-                      <br>
-                      <p>GuildSomm is an excellent website for both budding and advanced
-                        oenophiles. Although most of the website is membership based,
-                        there are plenty of great public-accessible videos, podcasts,
-                        and articles.</p>
-                      <br>
-                      <br>
-                      <a href="https://www.amazon.com/Wine-Bible-Karen-MacNeil/dp/0761180834/ref=sr_1_1?s=books&ie=UTF8&qid=1489707038&sr=1-1&keywords=the+wine+bible">The Wine Bible by Karen MacNeil</a>
-                      <br>
-                      <p>Karen MacNeil's book is a must-have for any level of wine enthusiast.
-                        Informative and a joy to read, you easily jump to any section
-                        to read up varietals and countries.
-                      </p>
-                      <br>
-                      <br>
-                      <a href="https://www.winefolly.com">Winefolly</a>
-                      <br>
-                      <p>A great book to have on hand, and a very educational and fun blog.
-                        Especially if you would like to know more about wine and food
-                        pairings.</p>
-                      <br>
-                      <br>
-                      <a href="https://www.mastersommeliers.org/">Court of Master Sommeliers America</a>
-                      <br>
-                      <p>This link is for those of you, that want to take your education
-                        to the next level and sign up for certified sommelier exams.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         <!--Footer-->
         <footer class="page-footer green darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Our Company</h5>
-                <p class="white-text">We are a team of students working on this project like it's our full time
-                  job.</p>
-                <p class="white-text">We also just love Dungeons & Dragons.</p>
+                <h5>Our Company</h5>
+                <p>We are a team of students working on this project like it's our full time
+                  job.
+                </p>
+                <p>We also just love Dungeons & Dragons.</p>
                 <br>
-                <h5 class="white-text">Contact Us</h5>
+                <h5>Contact Us</h5>
                 <address>
                   <a href="mailto:rollinit@gmail.com">rollinit@gmail.com</a>
                 </address>
@@ -156,27 +118,28 @@
               <div class="col l3 s12">
               </div>
               <div class="col l3 s12">
-                <h5 class="white-text">Connect</h5>
-                <i class="icon"> <a href="https://www.facebook.com"><img src="./images/facebook.png"></a></i>
-                <i class="icon"> <a href="https://www.instagram.com"><img src="./images/instagram.png"></a></i>
+                <h5>Connect</h5>
+                <i class="icon"> <a href="https://www.facebook.com"><img id="overlay"src="./images/facebook.png"></a></i>
+                <i class="icon"> <a href="https://www.instagram.com"><img id="overlay"src="./images/instagram.png"></a></i>
                 <br>
-                <i class="icon"><a href="https://www.twitter.com"><img src="./images/twitter.png"></a></i>
-                <i class="icon"> <a href="https://plus.google.com"><img src="./images/googleplus.png"></a></i>
+                <i class="icon"><a href="https://www.twitter.com"><img id="overlay"src="./images/twitter.png"></a></i>
+                <i class="icon"> <a href="https://plus.google.com"><img id="overlay" src="./images/googleplus.png"></a></i>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
               <p id="ourNames">&copy2017 Made by Travis Nash, Paden Pace, Monica Jones, & Keli Poole
-                <a
-                  class="brown-text text-lighten-3"></a>
+                <a class="brown-text text-lighten-3"></a>
               </p>
             </div>
           </div>
         </footer>
 
-        <div id="root"></div>
-        <script src="./bundle.js" />
+
+      </div>
+      </div>
+    </body>
         <script>
           $(document).ready(function () {
             (function ($) {
@@ -188,8 +151,4 @@
             });
           });
         </script>
-      </div>
-      </div>
-    </body>
-
 </html>
